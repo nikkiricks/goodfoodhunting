@@ -1,0 +1,16 @@
+
+
+
+
+
+<div class="main-thumbs">  
+  <% @dishes.each do |dish| %> 
+  
+    <div class="single-thumb">
+      <a href="/details?id=<%=dish["id"] %> "><img src="<%= dish["image_url"] %> " alt=""> </a>  
+      <h3> <%= dish["name"] %>  </h3>
+    </div>
+
+    <% end %>
+
+</div>
