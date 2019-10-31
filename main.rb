@@ -1,6 +1,10 @@
 # dependencies = libraries & gems     
 require 'sinatra'
-require 'sinatra/reloader'
+
+if settings.development?
+  require 'sinatra/reloader' #depnds on a gem sinatra-contrib
+end
+
 require 'pg'
 require 'pry'
 
