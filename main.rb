@@ -3,10 +3,10 @@ require 'sinatra'
 
 if settings.development?
   require 'sinatra/reloader' #depnds on a gem sinatra-contrib
+  require 'pry'
 end
 
 require 'pg'
-require 'pry'
 
 
 require_relative 'models/dish.rb'
